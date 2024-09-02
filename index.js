@@ -5,6 +5,8 @@ const bodyParser = require('body-parser');
 const app = express();
 const port = 3000;
 
+require('dotenv').config()
+
 // Configuração do MySQL
   const connection = mysql.createConnection({
     host: 'localhost',
